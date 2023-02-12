@@ -1,8 +1,24 @@
 import React from "react"
-import logo from "../../components/assets/images/logo.svg"
+import logo from "../../components/assets/images/logo.png"
+import mLogo from "../../components/assets/images/mlogo.png"
 import { Link } from "react-router-dom"
 
 const Search = ({ CartItem }) => {
+  const mystyle = {
+    width: "150px",
+    height: "60px",
+    margin: "0 auto",
+    marginRight: "10px"
+  }
+  const mstyle = {
+    width: "50px",
+    height: "50px",
+    margin: "0 auto"
+  }
+
+  const mystyle2 = {
+    width: "100%"
+  }
   // fixed Header
   window.addEventListener("scroll", function () {
     const search = document.querySelector(".search")
@@ -13,8 +29,11 @@ const Search = ({ CartItem }) => {
     <>
       <section className='search'>
         <div className='container c_flex'>
-          <div className='logo width '>
-            <img src={logo} alt='' />
+          <div className='logo width ' style={mystyle}>
+          <Link to='/'>
+          <img  style={mystyle2} className='lg' src={logo} alt='' />
+          <img  style={mstyle} className='sm' src={mLogo} alt='' />
+          </Link>
           </div>
 
           <div className='search-box f_flex'>

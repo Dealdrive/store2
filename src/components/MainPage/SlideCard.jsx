@@ -15,6 +15,7 @@ const SlideCard = () => {
       return <ul style={{ margin: "0px" }}>{dots}</ul>
     },
   }
+  
   return (
     <>
       <Slider {...settings}>

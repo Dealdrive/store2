@@ -27,3 +27,14 @@
   left: 0;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .category{
+    display: none;
+  }
+  .box{
+    display: none;
+  }
+  .homeSlide{
+    display: none;
+  }
+}
